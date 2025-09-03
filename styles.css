@@ -1,0 +1,47 @@
+
+body {
+margin: 0;
+min-height: 100vh;
+background-color: #000;
+
+  /* встраиваем сердечко как SVG-картинку прямо в CSS */
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'><path fill='%23ff4d6d' d='M24 41.5L8.7 26.2a10 10 0 1 1 14.1-14.1L24 13.3l1.2-1.2A10 10 0 1 1 39.3 26.2L24 41.5z'/></svg>");
+background-repeat: repeat;
+  background-size: 48px 48px; /* размер «клетки» с сердечком */
+  background-attachment: fixed; /* приятный эффект при прокрутке (по желанию) */
+}
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 21px;
+    flex-direction: column;
+    background-color: pink;
+    width: 340px;
+    height: 320px;
+    margin-left: 35%;
+    margin-top: 400px;
+    border-radius: 20px;
+    position: fixed;
+}
+h2, .second {
+    color: #fff;
+}
+.second {
+    padding-bottom: 12px;
+}
+h2 {
+    font-size: 60px;
+} 
+
+.second {
+    font-size: 56px;
+}
+
+@media  (min-width: 1128px) {
+    .first {
+        margin-top: 220px;
+        margin-left: 43%;
+    }
+}
+
